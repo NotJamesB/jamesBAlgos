@@ -1,6 +1,6 @@
 package com.codingdojo.project.testing;
 
-import java.util.Scanner;
+import java.util.Arrays;
 
 public class Test {
 
@@ -36,20 +36,32 @@ public class Test {
 //		else {
 //			System.out.println("Your number is odd!");
 //		}
-		
-	   int x = 100;
-	   int y = 53;
-	   int z = 54;
-	   if (x > y && x > z) {
-		   System.out.println(x + " Is the largest number");
-	   }
-	   else if(y > x && y > z) {
-		   System.out.println(y + " Is the largest number");
-	   }
-	   else {
-		   System.out.println(z + " Is the largest number");
-	   }
-		
+//		
+//	   int x = 100;
+//	   int y = 53;
+//	   int z = 54;
+//	   if (x > y && x > z) {
+//		   System.out.println(x + " Is the largest number");
+//	   }
+//	   else if(y > x && y > z) {
+//		   System.out.println(y + " Is the largest number");
+//	   }
+//	   else {
+//		   System.out.println(z + " Is the largest number");
+//	   }
+	   
+	   int[] my_array = {
+			   123,333,5345,352312,4356,22,1754
+			   };
+		String[] my_array2 = {
+				"Java", "Word", "rust", "h1z1", "fortnite"
+		};
+		System.out.println("Original num " + Arrays.toString(my_array));
+		Arrays.sort(my_array);
+		System.out.println("New num " + Arrays.toString(my_array));
+		System.out.println("Original Words " +Arrays.toString(my_array2));
+		Arrays.sort(my_array2);
+		System.out.println("New Array " + Arrays.toString(my_array2));
 	}
 
 }
